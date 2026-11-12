@@ -234,7 +234,8 @@ void removerItem(){
                                         return; 
                                     }
                                     c = 1;
-                                    atualItem.quantidade -= removerItem.quantidade; 
+                                    atualItem.quantidade -= removerItem.quantidade;
+                                        if (atualItem.quantidade == 0) c =2; 
                                 }
                                 if (atualItem.quantidade > 0) {
                                     if (fprintf(estoque_temp, "%s\n%d\n", atualItem.nome, atualItem.quantidade) < 0) {
@@ -279,5 +280,10 @@ void removerItem(){
                                                 return;
                                             }
                                             remove("inventory.bak");
-                                                printf("Item removido com sucesso!\n");
+                                                if (c == 1) {
+                                                    printf("Quantidade atualizada com sucesso!\n");
+                                                } else
+                                                if (c == 2) {
+                                                    printf("Item removido com sucesso!\n");
+                                                }
 }
