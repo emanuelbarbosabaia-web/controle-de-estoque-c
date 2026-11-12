@@ -4,5 +4,3 @@ Caneta
 50
 Caderno
 500
-tesoura sem ponta
-250
