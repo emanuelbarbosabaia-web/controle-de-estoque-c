@@ -1,6 +1,40 @@
-Notebook
-10
-Caneta
-50
-Caderno
-500
+Arroz Branco Tipo 1
+120
+Arroz Integral Organico
+45
+Arroz Parboilizado Tipo 1
+80
+Feijao Carioca Tipo 1
+150
+Feijao Preto Selecionado
+95
+Feijao Fradinho Tipo 1
+30
+Milho Verde em Conserva
+64
+Milho de Pipoca Premium
+110
+Farinha de Milho Amarela
+40
+Fuba de Milho Mimoso
+55
+Acucar Cristal Especial
+200
+Acucar Refinado Uniao
+85
+Cafe Torrado e Moido
+70
+Oleo de Soja Refinado
+135
+Macarrao Espaguete Numero 8
+90
+Macarrao Parafuso Tricolor
+60
+Sal Refinado Iodado
+180
+Leite Integral Longa Vida
+240
+Molho de Tomate Tradicional
+115
+Farinha de Trigo Especial
+75
