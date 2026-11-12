@@ -115,8 +115,9 @@ void adicionarItem(){
             printf("Digite o nome do item: ");
             scanf(" %99[^\n]", adicionarItem.nome);
                 while(getchar() != '\n');
-                for (int i = strlen(adicionarItem.nome); i > 0 && adicionarItem.nome[i - 1] == ' '; adicionarItem.nome[--i] = '\0');
-                for (int i = 0, j = 0; adicionarItem.nome[i] == ' ' ? i++ : (adicionarItem.nome[j++] = adicionarItem.nome[i++]) != '\0'; );
+                int i; for ( i = 0; adicionarItem.nome[i] == ' '; i++);
+                for (int j = 0; (adicionarItem.nome[j] = adicionarItem.nome[i]) != '\0'; i++, j++);
+                for (int r = strlen(adicionarItem.nome) - 1; r >= 0 && adicionarItem.nome[r] == ' '; adicionarItem.nome[r--] = '\0');
             printf("Digite a quantidade a ser adicionada: "); 
             if (scanf("%d", &adicionarItem.quantidade) != 1) {
                 printf("Entrada inválida!\n");
@@ -195,8 +196,9 @@ void removerItem(){
             printf("Digite o nome do item: ");
             scanf(" %99[^\n]", removerItem.nome);
                 while(getchar() != '\n');
-                for (int i = strlen(removerItem.nome); i > 0 && removerItem.nome[i - 1] == ' '; removerItem.nome[--i] = '\0');
-                for (int i = 0, j = 0; removerItem.nome[i] == ' ' ? i++ : (removerItem.nome[j++] = removerItem.nome[i++]) != '\0'; );
+                int x; for ( x = 0; removerItem.nome[x] == ' '; x++);
+                for (int j = 0; (removerItem.nome[j] = removerItem.nome[x]) != '\0'; x++, j++);
+                for (int i = strlen(removerItem.nome) - 1 ; i >= 0 && removerItem.nome[i] == ' '; removerItem.nome[--i] = '\0');
             printf("Digite a quantidade a ser removida: "); 
             if (scanf("%d", &removerItem.quantidade) != 1) {
                 printf("Entrada inválida!\n");
